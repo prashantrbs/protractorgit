@@ -12,6 +12,7 @@ describe("Test Suit", function()
             var stream = fs.createWriteStream('./Pages/screenshot/one.png');
 			stream.write(new Buffer(png, 'base64'));
 			stream.end();
+            browser.sleep();
         })
     });
 
