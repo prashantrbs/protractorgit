@@ -1,9 +1,9 @@
-var HtmlReporter = require('C:/Users/prash/AppData/Roaming/npm/node_modules/protractor/node_modules/protractor-beautiful-reporter');
+//var HtmlReporter = require('C:/Users/prash/AppData/Roaming/npm/node_modules/protractor/node_modules/protractor-beautiful-reporter');
 exports.config = {
   directConnect: true,
 
   // Capabilities to be passed to the webdriver instance.
-  capabilities: {
+  capabilities:  {
     'browserName': 'firefox'
     
   },
@@ -13,18 +13,18 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['..//pages//NewSS.js'],
+  specs: ['..//ObjectsModel//formobjects.js'],
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
   },
-  onPrepare: function() {
+ /*  onPrepare: function() {
     // Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
     jasmine.getEnv().addReporter(new HtmlReporter({
        baseDirectory: 'screenshot/screenshots'
     }).getJasmine2Reporter());
- }
+ } */
   
 
 
